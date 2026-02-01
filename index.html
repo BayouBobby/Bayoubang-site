@@ -725,11 +725,24 @@
             <p>First drop dates, early links, and behind-the-scenes. No spam.</p>
           </div>
 
-          <!-- Demo form: replace with Mailchimp/ConvertKit/etc when ready -->
-          <form onsubmit="return fakeSubmit(event)">
-            <input class="field" type="email" name="email" placeholder="Email address" required />
-            <button class="btn btn-primary" type="submit">Notify Me</button>
-          </form>
+        <form 
+  action="https://formspree.io/f/xrelkgyw" 
+  method="POST"
+>
+  <input
+    class="field"
+    type="email"
+    name="email"
+    placeholder="Email address"
+    required
+  />
+
+  <input type="hidden" name="source" value="Notify Me - Bayou Bang" />
+
+  <button class="btn btn-primary" type="submit">
+    Notify Me
+  </button>
+</form>
 
           <div class="fineprint" id="formNote">
            
@@ -780,6 +793,7 @@
   </script>
 </body>
 </html>
+
 
 
 
